@@ -1,4 +1,10 @@
 # Attiny85-RGB-LED-Strip-Driver
+
+<img src="https://github.com/jaimelaborda/Attiny85-RGB-LED-Strip-Driver/blob/master/img/attiny85_led_driver.jpg" align="center" height="400">
+
+
+
+
 RGB LED Strip Driver based on Attiny85 microcontroller programed on Arduino IDE. Drived by 2N7000 low-cost FETs.
 
 ##Bill of Materials (BOM)
