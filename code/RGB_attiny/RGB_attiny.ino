@@ -1,4 +1,4 @@
-int blue = 11, red = 9, green = 10;
+int blue =4 , red = 0, green = 1;
 int c = 0, t_on = 0, t_off = 0;
 float T = 0, f = 0;
 

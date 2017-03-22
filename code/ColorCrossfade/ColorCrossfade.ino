@@ -52,9 +52,9 @@
 */ 
 
 // Output
-int redPin = 9;   // Red LED,   connected to digital pin 9
-int grnPin = 10;  // Green LED, connected to digital pin 10
-int bluPin = 11;  // Blue LED,  connected to digital pin 11
+int redPin = 0;   // Red LED,   connected to digital pin 9
+int grnPin = 1;  // Green LED, connected to digital pin 10
+int bluPin = 4;  // Blue LED,  connected to digital pin 11
 
 // Color arrays
 int black[3]  = { 0, 0, 0 };
@@ -90,9 +90,6 @@ void setup()
   pinMode(grnPin, OUTPUT);   
   pinMode(bluPin, OUTPUT); 
 
-  if (DEBUG) {           // If we want to see values for debugging...
-    Serial.begin(9600);  // ...set up the serial ouput 
-  }
 }
 
 // Main program: list the order of crossfades
@@ -200,20 +197,6 @@ void crossFade(int color[3]) {
     analogWrite(bluPin, bluVal); 
 
     delay(wait); // Pause for 'wait' milliseconds before resuming the loop
-
-    if (DEBUG) { // If we want serial output, print it at the 
-      if (i == 0 or i % loopCount == 0) { // beginning, and every loopCount times
-        Serial.print("Loop/RGB: #");
-        Serial.print(i);
-        Serial.print(" | ");
-        Serial.print(redVal);
-        Serial.print(" / ");
-        Serial.print(grnVal);
-        Serial.print(" / ");  
-        Serial.println(bluVal); 
-      } 
-      DEBUG += 1;
-    }
   }
   // Update current values for next loop
   prevR = redVal; 
