@@ -7,7 +7,7 @@
 
 RGB LED Strip Driver based on Attiny85 microcontroller programed on Arduino IDE. Drived by 2N7000 low-cost FETs.
 
-##Bill of Materials (BOM)
+## Bill of Materials (BOM)
 
 | ID | VALUE                 | QNTY | PACKAGE               | COMPONENT      | Manufacturer Part     |
 |----|-----------------------|------|-----------------------|----------------|-----------------------|
